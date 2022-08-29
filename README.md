@@ -40,7 +40,7 @@ python manage.py migrate
 ### Import demo data
 
 ```
-python manage.py loaddata pages-demo-data.json
+python manage.py loaddata fixtures/pages-demo-data.json
 ```
 
 ### Start app
