@@ -32,3 +32,15 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
+### Demo accounts
+```
+Demo Admin account
+admin
+admin123456
+
+User Account with reduced permissions
+Demo user account
+test123456
+
+```
+
