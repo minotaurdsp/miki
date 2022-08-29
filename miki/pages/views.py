@@ -4,14 +4,27 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.forms import ModelForm
 from django import forms
 from .models import Page
+from django.views.generic import  ListView
+from django.db.models import Q
 
 
-def index(request):
-    pages_list = Page.objects.order_by('-created')[:5]
-    context = {
-        'pages_list': pages_list,
-    }
-    return render(request, 'pages/index.html', context)
+class IndexView(ListView):
+    model = Page
+    template_name = "pages/index.html"
+
+    def get_queryset(self):  # new
+        query = self.request.GET.get("q")
+        if query:
+            pages_list = Page.objects.filter(
+                Q(title__icontains=query) | Q(content__icontains=query)
+            )
+            print("search ",pages_list)
+        else:
+            pages_list = Page.objects.order_by('-created')[:5]
+
+            print("else   ",pages_list)
+
+        return pages_list
 
 
 def detail(request, page_id):

@@ -5,7 +5,7 @@ app_name = 'pages'
 
 urlpatterns = [
     path(
-        '', views.index, name='index'
+        '', views.IndexView.as_view(), name='index'
     ),
     path(
         '<int:page_id>/', views.detail, name='detail'
@@ -15,7 +15,5 @@ urlpatterns = [
     ),
     path(
         'create', views.PageCreate.as_view(), name='create'
-    ),
-
-    
+    )
 ]

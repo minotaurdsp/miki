@@ -1,14 +1,21 @@
 
 {% extends "base.html" %}
 
+
+
+
 {% block content %}
     
     <h1>Wiki Pages</h1>
     <p>Welcome to miki wiki Network</em>!</p>
 
-    {% if pages_list %}
+    <form action="{% url 'pages:index' %}" method="get">
+        <input name="q" type="text" placeholder="Search...">
+    </form>
+
+    {% if page_list %}
         <ul>
-        {% for page in pages_list %}
+        {% for page in page_list %}
             <li><a href="{% url 'pages:detail' page.id  %}">{{  page.title }}</a></li>
         {% endfor %}
         </ul>
