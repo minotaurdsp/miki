@@ -34,6 +34,8 @@ python manage.py migrate
 
 ### Demo accounts
 ```
+http://127.0.0.1:8000/admin
+
 Demo Admin account
 admin
 admin123456
