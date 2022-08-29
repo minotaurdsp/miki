@@ -18,12 +18,9 @@ class IndexView(ListView):
             pages_list = Page.objects.filter(
                 Q(title__icontains=query) | Q(content__icontains=query)
             )
-            print("search ",pages_list)
         else:
             pages_list = Page.objects.order_by('-created')[:5]
-
-            print("else   ",pages_list)
-
+            
         return pages_list
 
 

@@ -1,1 +1,466 @@
-[{"model": "pages.page", "pk": 1, "fields": {"title": "Content management system", "content": "A content management system (CMS) is computer software used to manage the creation and modification of digital content (content management).[1][2][3] A CMS is typically used for enterprise content management (ECM) and web content management (WCM).\r\n\r\nECM typically supports multiple users in a collaborative environment[4] by integrating document management, digital asset management, and record retention.[5]\r\n\r\nAlternatively, WCM is the collaborative authoring for websites and may include text and embed graphics, photos, video, audio, maps, and program code that display content and interact with the user.[6][7] ECM typically includes a WCM function.", "author": 1, "created": "2022-08-24T16:44:38.060Z", "updated": "2022-08-24T16:44:38.060Z", "is_published": true, "linked_page": [1]}}, {"model": "pages.page", "pk": 2, "fields": {"title": "django CMS", "content": "django CMS is a free and open source content management system platform for publishing content on the World Wide Web and intranets.[4] It is written in Django language framework, with Python.[5][6]", "author": 1, "created": "2022-08-24T17:31:48.155Z", "updated": "2022-08-24T17:31:48.155Z", "is_published": true, "linked_page": [1]}}, {"model": "pages.page", "pk": 3, "fields": {"title": "Djang web framework", "content": "Django (/ˈdʒæŋɡoʊ/ JANG-goh; sometimes stylized as django)[6] is a free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.[7][8] It is maintained by the Django Software Foundation (DSF), an independent organization established in the US as a 501(c)(3) non-profit.\r\n\r\nDjango's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and \"pluggability\" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself.[9] Python is used throughout, even for settings, files, and data models. Django also provides an optional administrative create, read, update and delete interface that is generated dynamically through introspection and configured via admin models.\r\n\r\nSome well-known sites that use Django include Instagram,[10] Mozilla,[11] Disqus,[12] Bitbucket,[13] Nextdoor[14] and Clubhouse.[15]", "author": 1, "created": "2022-08-24T20:54:19.873Z", "updated": "2022-08-24T20:54:19.873Z", "is_published": true, "linked_page": [2]}}, {"model": "pages.page", "pk": 4, "fields": {"title": "Content Management Interface", "content": "Content Management Interface (CMI) in computer software is an Open Mobile Alliance enabler that provides a standardized way for content providers to interact with service providers (network operators).[1]\r\n\r\nCMI is an interface between content providers and service providers, which does not directly involve the end user. The scope of the standard covers the entire off-deck content management lifecycle but does not include implementation or behavior beyond the API. Therefore, it can accommodate a broad range of services and service policies.\r\n\r\nAs of December 2009, CMI is publicly available as a Candidate 1.0 release", "author": 1, "created": "2022-08-29T20:42:10.197Z", "updated": "2022-08-29T20:42:10.198Z", "is_published": true, "linked_page": []}}]
+[
+    {
+      "model": "admin.logentry",
+      "pk": 1,
+      "fields": {
+        "action_time": "2022-08-29T21:46:14.320Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 2,
+      "fields": {
+        "action_time": "2022-08-29T21:46:39.141Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "base_user",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 3,
+      "fields": {
+        "action_time": "2022-08-29T21:47:24.627Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "base_user",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+      }
+    },
+    {
+      "model": "admin.logentry",
+      "pk": 4,
+      "fields": {
+        "action_time": "2022-08-29T21:47:36.685Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "base_user",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 1,
+      "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 2,
+      "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 3,
+      "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 4,
+      "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 5,
+      "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 6,
+      "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 7,
+      "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 8,
+      "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 9,
+      "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 10,
+      "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 11,
+      "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 12,
+      "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 13,
+      "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 14,
+      "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 15,
+      "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 16,
+      "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 17,
+      "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 18,
+      "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 19,
+      "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 20,
+      "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 21,
+      "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 22,
+      "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 23,
+      "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 24,
+      "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 25,
+      "fields": {
+        "name": "Can add page",
+        "content_type": 7,
+        "codename": "add_page"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 26,
+      "fields": {
+        "name": "Can change page",
+        "content_type": 7,
+        "codename": "change_page"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 27,
+      "fields": {
+        "name": "Can delete page",
+        "content_type": 7,
+        "codename": "delete_page"
+      }
+    },
+    {
+      "model": "auth.permission",
+      "pk": 28,
+      "fields": {
+        "name": "Can view page",
+        "content_type": 7,
+        "codename": "view_page"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 1,
+      "fields": {
+        "password": "pbkdf2_sha256$260000$MUH7Q6E0zzPaJJLOnuFK8K$zZLGX7i7/ByCnidEtz5pF8ZLnanezV6vi7Qy+lR5A44=",
+        "last_login": "2022-08-29T21:45:58Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "admin",
+        "last_name": "admin",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-08-29T21:45:31Z",
+        "groups": [],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 2,
+      "fields": {
+        "password": "pbkdf2_sha256$260000$NbJsBwyJyTrVPItSy6zg8X$wFaavEJu53Do4/Dw3HtU9BkIFaDOdnEHghKtGL7glZg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "base_user",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-08-29T21:46:38Z",
+        "groups": [],
+        "user_permissions": [
+          28
+        ]
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 1,
+      "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 2,
+      "fields": {
+        "app_label": "auth",
+        "model": "permission"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 3,
+      "fields": {
+        "app_label": "auth",
+        "model": "group"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 4,
+      "fields": {
+        "app_label": "auth",
+        "model": "user"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 5,
+      "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 6,
+      "fields": {
+        "app_label": "sessions",
+        "model": "session"
+      }
+    },
+    {
+      "model": "contenttypes.contenttype",
+      "pk": 7,
+      "fields": {
+        "app_label": "pages",
+        "model": "page"
+      }
+    },
+    {
+      "model": "sessions.session",
+      "pk": "xxahqjr3yvrprpre84rl6bvg1sh2mxbt",
+      "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-4Q8lfc5g7XptHEC2FCcV4u4QKQW0b2bei0XY1hq3kZc4E7swyU6_G0J65LYDukO7dZ56W5cZ-a7wgw4-dcrP6-H-HVQY9Vs7IcgFk8kWm4WxpRCUbJU2AUg5j3TWOmkvtVWYEAiDxJCkB1DSJcfeH_K-OGA:1oSmZy:rx-oycAl4-Yw6SnjTX2IHNLI3cO_4mOWsi5UsHSqQLw",
+        "expire_date": "2022-09-12T21:45:58.203Z"
+      }
+    },
+    {
+      "model": "pages.page",
+      "pk": 1,
+      "fields": {
+        "title": "Content management system",
+        "content": "A content management system (CMS) is computer software used to manage the creation and modification of digital content (content management).[1][2][3] A CMS is typically used for enterprise content management (ECM) and web content management (WCM).\r\n\r\nECM typically supports multiple users in a collaborative environment[4] by integrating document management, digital asset management, and record retention.[5]\r\n\r\nAlternatively, WCM is the collaborative authoring for websites and may include text and embed graphics, photos, video, audio, maps, and program code that display content and interact with the user.[6][7] ECM typically includes a WCM function.",
+        "author": 1,
+        "created": "2022-08-24T16:44:38.060Z",
+        "updated": "2022-08-24T16:44:38.060Z",
+        "is_published": true,
+        "linked_page": [
+          1
+        ]
+      }
+    },
+    {
+      "model": "pages.page",
+      "pk": 2,
+      "fields": {
+        "title": "django CMS",
+        "content": "django CMS is a free and open source content management system platform for publishing content on the World Wide Web and intranets.[4] It is written in Django language framework, with Python.[5][6]",
+        "author": 1,
+        "created": "2022-08-24T17:31:48.155Z",
+        "updated": "2022-08-24T17:31:48.155Z",
+        "is_published": true,
+        "linked_page": [
+          1
+        ]
+      }
+    },
+    {
+      "model": "pages.page",
+      "pk": 3,
+      "fields": {
+        "title": "Djang web framework",
+        "content": "Django (/ˈdʒæŋɡoʊ/ JANG-goh; sometimes stylized as django)[6] is a free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.[7][8] It is maintained by the Django Software Foundation (DSF), an independent organization established in the US as a 501(c)(3) non-profit.\r\n\r\nDjango's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and \"pluggability\" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself.[9] Python is used throughout, even for settings, files, and data models. Django also provides an optional administrative create, read, update and delete interface that is generated dynamically through introspection and configured via admin models.\r\n\r\nSome well-known sites that use Django include Instagram,[10] Mozilla,[11] Disqus,[12] Bitbucket,[13] Nextdoor[14] and Clubhouse.[15]",
+        "author": 1,
+        "created": "2022-08-24T20:54:19.873Z",
+        "updated": "2022-08-24T20:54:19.873Z",
+        "is_published": true,
+        "linked_page": [
+          2
+        ]
+      }
+    },
+    {
+      "model": "pages.page",
+      "pk": 4,
+      "fields": {
+        "title": "Content Management Interface",
+        "content": "Content Management Interface (CMI) in computer software is an Open Mobile Alliance enabler that provides a standardized way for content providers to interact with service providers (network operators).[1]\r\n\r\nCMI is an interface between content providers and service providers, which does not directly involve the end user. The scope of the standard covers the entire off-deck content management lifecycle but does not include implementation or behavior beyond the API. Therefore, it can accommodate a broad range of services and service policies.\r\n\r\nAs of December 2009, CMI is publicly available as a Candidate 1.0 release",
+        "author": 1,
+        "created": "2022-08-29T20:42:10.197Z",
+        "updated": "2022-08-29T20:42:10.198Z",
+        "is_published": true,
+        "linked_page": []
+      }
+    }
+  ]
