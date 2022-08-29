@@ -30,7 +30,7 @@ pip install -r miki/requirements.txt
 cd miki/miki
 ```
 
-### Import demo data
+### Init new db shema 
 
 ```
 python manage.py makemigrations
