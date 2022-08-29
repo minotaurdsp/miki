@@ -56,11 +56,12 @@ python manage.py runserver
 http://127.0.0.1:8000/admin
 
 Demo Admin account
-admin
-admin123456
+u:admin
+p:admin123456
 
 User Account with reduced permissions
 Demo user account
-test123456
+u:base_user
+p:test123456
 
 ```
