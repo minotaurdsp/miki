@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Miki</title>{% endblock %}
+</head>
+<body>
+
+    <ul class="sidebar-nav">
+        {% if user.is_authenticated %}
+          <li>User: {{ user.get_username }}</li>
+          <li><a href="/admin/logout">Logout</a></li>
+
+            {% if perms.pages.add_page %}
+                <a href="{% url 'pages:create' %}">Create Page</a>
+            {% endif %}
+
+        {% else %}
+          <li><a href="/admin/login">Login</a></li>
+        {% endif %}
+     </ul>
+
+  
+  {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+</body>
+</html>

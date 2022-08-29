@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+        <h2>
+                <a href="{% url 'pages:index' %}"><-</a>
+                {{ page.title }}
+                
+                {% if perms.pages.change_page %}
+                        <a href="{% url 'pages:edit' page.id  %}">Edit Page</a>
+                {% endif %}
+
+        </h2>
+        <p>Page Author: {{ page.author }}</p>
+        <p>last update: {{ page.updated }}</p>
+
+        {{ page.content }}
+
+        {% if page.releated_pages %}
+                <h3>releated</h3>
+                {% for re_page in page.releated_pages %}
+                        <li><a href="{% url 'pages:detail' re_page.id  %}">[{{ re_page.title }}]</a></li>
+                {% endfor %}
+        {% else %}
+                <p>No releated pages</p>
+        {% endif %}
+
+{% endblock %}
+
+
+
+
