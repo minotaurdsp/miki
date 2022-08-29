@@ -21,13 +21,20 @@ source venv/bin/activate
 ### Install requirements
 
 ```
-pip install -r requirements.txt
+pip install -r miki/requirements.txt
+```
+
+### Change directory
+
+```
+cd miki/miki
 ```
 
 ### Import demo data
 
 ```
 python manage.py makemigrations
+python manage.py migrate
 ```
 
 ### Import demo data
@@ -39,8 +46,8 @@ python manage.py loaddata pages-demo-data.json
 ### Start app
 
 ```
-python manage.py makemigrations
-python manage.py migrate
+python manage.py runserver
+
 ```
 
 ### Demo accounts
